@@ -145,7 +145,7 @@ public class MainActivity extends Activity {
         mark.addTapListener(new MapObjectTapListener() {
             @Override
             public boolean onMapObjectTap(@NonNull MapObject mapObject, @NonNull Point point) {
-                Intent intent = new Intent(getApplicationContext(), Polyana.class);
+                Intent intent = new Intent(getApplicationContext(), Ber.class);
                 startActivity(intent);
                 return true;
             }
