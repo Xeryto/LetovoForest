@@ -34,7 +34,7 @@ public class Ber extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.polyana);
+        setContentView(R.layout.activity_ber2);
         proceedButtons();
     }
 
