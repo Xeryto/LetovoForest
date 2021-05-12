@@ -195,23 +195,23 @@
         android:orientation="horizontal">
 
         <Space
-            android:layout_width="20pt"
+            android:layout_width="19pt"
             android:layout_height="wrap_content"
             android:layout_weight="1" />
 
         <Button
             android:id="@+id/sarrow"
-            android:layout_width="24pt"
+            android:layout_width="25pt"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="<<" />
+            android:text="@string/sarrow" />
 
         <Button
             android:id="@+id/sarrow2"
             android:layout_width="19pt"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="<" />
+            android:text="@string/sarrow2" />
 
         <Button
             android:id="@+id/b1"
@@ -246,17 +246,17 @@
             android:layout_width="19pt"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text=">" />
+            android:text="@string/farrow2" />
 
         <Button
             android:id="@+id/farrow"
-            android:layout_width="24pt"
+            android:layout_width="25pt"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text=">>" />
+            android:text="@string/farrow" />
 
         <Space
-            android:layout_width="20pt"
+            android:layout_width="19pt"
             android:layout_height="wrap_content"
             android:layout_weight="1" />
     </LinearLayout>

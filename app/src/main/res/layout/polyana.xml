@@ -13,11 +13,13 @@
 
         <ImageButton
             android:id="@+id/imageButton"
-            android:layout_width="81dp"
-            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
             android:layout_weight="1"
             android:contentDescription="@string/todo"
-            android:src="@drawable/mark" />
+            android:src="@drawable/logo"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"/>
 
         <Space
             android:layout_width="92dp"
@@ -51,17 +53,46 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/imageViewOne"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/deren"
+            android:scaleType="fitStart"
+            android:adjustViewBounds="true"
+            android:layout_margin="15dp"/>
+
+        <TextView
+            android:id="@+id/textViewOne"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:srcCompat="@drawable/mark" />
+            android:layout_margin="15dp"
+            android:text="Дерен белый \nЭто вырастающий до трех метров листопадный кустарник. Его устремленные вверх прямые ветки имеют красноватую окраску различных оттенков." />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/blockone2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imageViewOne2"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/barvinok"
+            android:scaleType="fitStart"
+            android:adjustViewBounds="true"
+            android:layout_margin="15dp"/>
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/textViewOne2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="2"
+            android:layout_weight="1"
+            android:layout_margin="15dp"
             android:text="TextView" />
 
     </LinearLayout>
@@ -78,18 +109,21 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/textViewTwo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="TextView" />
+            android:layout_margin="15dp"
+            android:text="Жимолость обыкновенная \nЭто листопадный кустарник высотой до 2,5 м. Молодые побеги зелёного или красноватого цвета, на старых кора серая или буровато-серая." />
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/imageViewTwo"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/mark" />
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/zhimolost"
+            android:scaleType="fitStart"
+            android:adjustViewBounds="true"
+            android:layout_margin="15dp"/>
     </LinearLayout>
 
     <Space
@@ -104,19 +138,21 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/imageViewThree"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/zhimolost2"
+            android:scaleType="fitStart"
+            android:adjustViewBounds="true"
+            android:layout_margin="15dp"/>
+
+        <TextView
+            android:id="@+id/textViewThree"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:srcCompat="@drawable/mark" />
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:text="TextView" />
-
+            android:layout_margin="15dp"
+            android:text="Жимолость татарская \nЭто листопадный кустарник высотой 1—3 м. Побеги полые. Кора молодых побегов желтовато-бурая, покрытая мелкими тёмными чечевичками;" />
     </LinearLayout>
 
     <Space
@@ -131,18 +167,21 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/textViewFour"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="TextView" />
+            android:text="Крушина ломкая \nКустарник или небольшое дерево, может достигать в высоту 7 м. Ствол и ветви тёмно-бурые. В отличие от крушины слабительной, ствол гладкий, без колючек."
+            android:layout_margin="15dp"/>
 
         <ImageView
-            android:id="@+id/imageView4"
+            android:id="@+id/imageViewFour"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/mark" />
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/krushina"
+            android:scaleType="fitStart"
+            android:adjustViewBounds="true"
+            android:layout_margin="15dp"/>
     </LinearLayout>
 
     <Space
@@ -156,23 +195,23 @@
         android:orientation="horizontal">
 
         <Space
-            android:layout_width="23pt"
+            android:layout_width="19pt"
             android:layout_height="wrap_content"
             android:layout_weight="1" />
 
         <Button
             android:id="@+id/sarrow"
-            android:layout_width="19pt"
+            android:layout_width="25pt"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="<<" />
+            android:text="@string/sarrow" />
 
         <Button
             android:id="@+id/sarrow2"
             android:layout_width="19pt"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="<" />
+            android:text="@string/sarrow2" />
 
         <Button
             android:id="@+id/b1"
@@ -207,17 +246,17 @@
             android:layout_width="19pt"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text=">" />
+            android:text="@string/farrow2" />
 
         <Button
             android:id="@+id/farrow"
-            android:layout_width="19pt"
+            android:layout_width="25pt"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text=">>" />
+            android:text="@string/farrow" />
 
         <Space
-            android:layout_width="23pt"
+            android:layout_width="19pt"
             android:layout_height="wrap_content"
             android:layout_weight="1" />
     </LinearLayout>

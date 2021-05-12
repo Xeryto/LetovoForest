@@ -1,13 +1,13 @@
 package com.example.mapkittest;
 
-import android.app.Activity;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import androidx.annotation.Nullable;
-
-public class Ber extends Activity {
+public class Ber extends AppCompatActivity {
 
     private final static int[] blocks = {
             R.id.blockone,
@@ -34,7 +34,7 @@ public class Ber extends Activity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.ber);
+        setContentView(R.layout.polyana);
         proceedButtons();
     }
 
