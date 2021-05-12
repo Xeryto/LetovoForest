@@ -10,10 +10,11 @@ import androidx.annotation.Nullable;
 public class Polyana extends Activity {
 
     private final static int[] blocks = {
-      R.id.blockone,
-      R.id.blocktwo,
-      R.id.blockthree,
-      R.id.blockfour
+            R.id.blockone,
+            R.id.blocktwo,
+            R.id.blockthree,
+            R.id.blockfour,
+            R.id.blockone2
     };
 
     private final static int[] buttons = {
@@ -26,7 +27,7 @@ public class Polyana extends Activity {
     private int currentButton = 1;
 
     private final static int BUTTONS_AMOUNT = 4,
-    BLOCKS_AMOUNT = 4;
+            BLOCKS_AMOUNT = 4;
 
     Button sarrow, farrow, sarrow2, farrow2;
 

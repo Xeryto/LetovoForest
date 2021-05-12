@@ -178,7 +178,7 @@ public class MainActivity extends Activity {
                             Toast.LENGTH_SHORT);
                     toast.show();
 
-                    Intent intent = new Intent(getApplicationContext(), Polyana.class);
+                    Intent intent = new Intent(getApplicationContext(), Ber.class);
                     startActivity(intent);
                 }
             }
