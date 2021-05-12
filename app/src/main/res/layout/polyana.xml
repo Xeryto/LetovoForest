@@ -9,7 +9,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginBottom="15dp">
 
         <ImageButton
             android:id="@+id/imageButton"
@@ -40,11 +41,6 @@
             android:layout_weight="1"
             android:text="@string/contacts" />
     </LinearLayout>
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"/>
 
     <LinearLayout
         android:id="@+id/blockone"
@@ -97,11 +93,6 @@
 
     </LinearLayout>
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"/>
-
     <LinearLayout
         android:id="@+id/blocktwo"
         android:layout_width="match_parent"
@@ -125,11 +116,6 @@
             android:adjustViewBounds="true"
             android:layout_margin="15dp"/>
     </LinearLayout>
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"/>
 
     <LinearLayout
         android:id="@+id/blockthree"
@@ -155,11 +141,6 @@
             android:text="Жимолость татарская \nЭто листопадный кустарник высотой 1—3 м. Побеги полые. Кора молодых побегов желтовато-бурая, покрытая мелкими тёмными чечевичками;" />
     </LinearLayout>
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"/>
-
     <LinearLayout
         android:id="@+id/blockfour"
         android:layout_width="match_parent"
@@ -184,87 +165,69 @@
             android:layout_margin="15dp"/>
     </LinearLayout>
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"/>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="20dp"
         android:orientation="horizontal">
-
-        <Space
-            android:layout_width="19pt"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
 
         <Button
             android:id="@+id/sarrow"
-            android:layout_width="25pt"
+            android:layout_width="60dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/sarrow" />
 
         <Button
             android:id="@+id/sarrow2"
-            android:layout_width="19pt"
+            android:layout_width="40dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/sarrow2" />
 
         <Button
             android:id="@+id/b1"
-            android:layout_width="19pt"
+            android:layout_width="40dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="1" />
 
         <Button
             android:id="@+id/b2"
-            android:layout_width="19pt"
+            android:layout_width="40dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="2" />
 
         <Button
             android:id="@+id/b3"
-            android:layout_width="19pt"
+            android:layout_width="40dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="3" />
 
         <Button
             android:id="@+id/b4"
-            android:layout_width="19pt"
+            android:layout_width="40dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="4" />
 
         <Button
             android:id="@+id/farrow2"
-            android:layout_width="19pt"
+            android:layout_width="40dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/farrow2" />
 
         <Button
             android:id="@+id/farrow"
-            android:layout_width="25pt"
+            android:layout_width="60dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/farrow" />
 
-        <Space
-            android:layout_width="19pt"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
     </LinearLayout>
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"/>
 
     <TextView
         android:id="@+id/textView5"

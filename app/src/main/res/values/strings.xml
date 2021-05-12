@@ -6,8 +6,8 @@
     <string name="footer">footer</string>
     <string name="home">home</string>
     <string name="contacts">contacts</string>
-    <string name="sarrow">Fp</string>
-    <string name="sarrow2">B</string>
-    <string name="farrow2">F</string>
-    <string name="farrow">Lp</string>
+    <string name="farrow"><![CDATA[>>]]></string>
+    <string name="farrow2"><![CDATA[>]]></string>
+    <string name="sarrow"><![CDATA[<<]]></string>
+    <string name="sarrow2"><![CDATA[<]]></string>
 </resources>
