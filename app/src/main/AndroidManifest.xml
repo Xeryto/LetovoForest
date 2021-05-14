@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Mapkittest">
-        <activity android:name=".Ber"></activity>
+        <activity android:name=".Sosna"></activity>
+        <activity android:name=".Olha" />
+        <activity android:name=".Lipa" />
+        <activity android:name=".Klen" />
+        <activity android:name=".Iva" />
+        <activity android:name=".Dub" />
+        <activity android:name=".Ber" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

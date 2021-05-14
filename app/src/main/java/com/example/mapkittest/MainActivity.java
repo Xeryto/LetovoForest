@@ -45,15 +45,40 @@ public class MainActivity extends Activity {
     private final String MAPKIT_API_KEY = "56536952-89db-4660-8a11-275b4a18135b";
     private final Point CAMERA_TARGET = new Point(55.554047, 37.421903);
     private final Point ANIMATED_RECTANGLE_CENTER = new Point(55.552831, 37.418256);
-    private final Point TRIANGLE_CENTER = new Point(55.554668, 37.425251);
     private final Point POLYLINE_CENTER = CAMERA_TARGET;
-    private final Point CIRCLE_CENTER = new Point(55.552648, 37.424371);
     private final Point DRAGGABLE_PLACEMARK_CENTER = new Point(55.556063, 37.417625);
-    private final double OBJECT_SIZE = 0.0015;
+    private final double OBJECT_SIZE = 0.0005;
 
     private MapView mapView;
     private MapObjectCollection mapObjects;
     private Handler animationHandler;
+
+    private final static Point[] circles = {
+            new Point(55.553296, 37.417797),
+            new Point(55.551642, 37.422131),
+
+            new Point(55.553868, 37.421423),
+            new Point(55.553186, 37.425972),
+
+            new Point(55.553186, 37.425972),
+            new Point(55.555631, 37.418419),
+            new Point(55.552648, 37.424371),
+
+            new Point(55.553917, 37.420618),
+            new Point(55.551073, 37.418411),
+
+            new Point(55.554815, 37.419212),
+            new Point(55.554785, 37.421953),
+            new Point(55.554230, 37.419960),
+
+            new Point(55.555703, 37.419728),
+            new Point(55.555874, 37.421917),
+            new Point(55.555671, 37.425466),
+
+            new Point(55.555990, 37.417504),
+            new Point(55.555664, 37.421839),
+            new Point(55.555697, 37.426181)
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -104,24 +129,139 @@ public class MainActivity extends Activity {
         rect.setFillColor(Color.TRANSPARENT);
         rect.setAnimatedImage(animatedImage, 32.0f);
 
-        ArrayList<Point> trianglePoints = new ArrayList<>();
-        trianglePoints.add(new Point(
-                TRIANGLE_CENTER.getLatitude() + OBJECT_SIZE,
-                TRIANGLE_CENTER.getLongitude() - OBJECT_SIZE));
-        trianglePoints.add(new Point(
-                TRIANGLE_CENTER.getLatitude() - OBJECT_SIZE,
-                TRIANGLE_CENTER.getLongitude() - OBJECT_SIZE));
-        trianglePoints.add(new Point(
-                TRIANGLE_CENTER.getLatitude(),
-                TRIANGLE_CENTER.getLongitude() + OBJECT_SIZE));
-        PolygonMapObject triangle = mapObjects.addPolygon(
-                new Polygon(new LinearRing(trianglePoints), new ArrayList<LinearRing>()));
-        triangle.setFillColor(Color.BLUE);
-        triangle.setStrokeColor(Color.BLACK);
-        triangle.setStrokeWidth(1.0f);
-        triangle.setZIndex(100.0f);
+        for (int i = 0; i < circles.length; i++) {
+            CircleMapObject circle = mapObjects.addCircle(
+                    new Circle(circles[i], 25), Color.BLACK, 2, Color.RED);
+            circle.setZIndex(100.0f);
+            circle.setUserData(new CircleMapObjectUserData(i, "Tappable circle"));
+            if (i<2) {
+                circle.addTapListener(new MapObjectTapListener() {
+                    @Override
+                    public boolean onMapObjectTap(MapObject mapObject, Point point) {
+                        if (mapObject instanceof CircleMapObject) {
+                            CircleMapObject circle = (CircleMapObject)mapObject;
 
-        createTappableCircle(CIRCLE_CENTER);
+                            Object userData = circle.getUserData();
+                            if (userData instanceof CircleMapObjectUserData) {
+                                CircleMapObjectUserData circleUserData = (CircleMapObjectUserData)userData;
+
+                                Intent intent = new Intent(getApplicationContext(), Ber.class);
+                                startActivity(intent);
+                            }
+                        }
+                        return true;
+                    }
+                });
+            } else if (i < 4) {
+                circle.addTapListener(new MapObjectTapListener() {
+                    @Override
+                    public boolean onMapObjectTap(MapObject mapObject, Point point) {
+                        if (mapObject instanceof CircleMapObject) {
+                            CircleMapObject circle = (CircleMapObject)mapObject;
+
+                            Object userData = circle.getUserData();
+                            if (userData instanceof CircleMapObjectUserData) {
+                                CircleMapObjectUserData circleUserData = (CircleMapObjectUserData)userData;
+
+                                Intent intent = new Intent(getApplicationContext(), Dub.class);
+                                startActivity(intent);
+                            }
+                        }
+                        return true;
+                    }
+                });
+            } else if (i < 7) {
+                circle.addTapListener(new MapObjectTapListener() {
+                    @Override
+                    public boolean onMapObjectTap(MapObject mapObject, Point point) {
+                        if (mapObject instanceof CircleMapObject) {
+                            CircleMapObject circle = (CircleMapObject)mapObject;
+
+                            Object userData = circle.getUserData();
+                            if (userData instanceof CircleMapObjectUserData) {
+                                CircleMapObjectUserData circleUserData = (CircleMapObjectUserData)userData;
+
+                                Intent intent = new Intent(getApplicationContext(), Klen.class);
+                                startActivity(intent);
+                            }
+                        }
+                        return true;
+                    }
+                });
+            } else if (i < 9) {
+                circle.addTapListener(new MapObjectTapListener() {
+                    @Override
+                    public boolean onMapObjectTap(MapObject mapObject, Point point) {
+                        if (mapObject instanceof CircleMapObject) {
+                            CircleMapObject circle = (CircleMapObject)mapObject;
+
+                            Object userData = circle.getUserData();
+                            if (userData instanceof CircleMapObjectUserData) {
+                                CircleMapObjectUserData circleUserData = (CircleMapObjectUserData)userData;
+
+                                Intent intent = new Intent(getApplicationContext(), Lipa.class);
+                                startActivity(intent);
+                            }
+                        }
+                        return true;
+                    }
+                });
+            } else if (i < 12) {
+                circle.addTapListener(new MapObjectTapListener() {
+                    @Override
+                    public boolean onMapObjectTap(MapObject mapObject, Point point) {
+                        if (mapObject instanceof CircleMapObject) {
+                            CircleMapObject circle = (CircleMapObject)mapObject;
+
+                            Object userData = circle.getUserData();
+                            if (userData instanceof CircleMapObjectUserData) {
+                                CircleMapObjectUserData circleUserData = (CircleMapObjectUserData)userData;
+
+                                Intent intent = new Intent(getApplicationContext(), Sosna.class);
+                                startActivity(intent);
+                            }
+                        }
+                        return true;
+                    }
+                });
+            } else if (i < 15) {
+                circle.addTapListener(new MapObjectTapListener() {
+                    @Override
+                    public boolean onMapObjectTap(MapObject mapObject, Point point) {
+                        if (mapObject instanceof CircleMapObject) {
+                            CircleMapObject circle = (CircleMapObject)mapObject;
+
+                            Object userData = circle.getUserData();
+                            if (userData instanceof CircleMapObjectUserData) {
+                                CircleMapObjectUserData circleUserData = (CircleMapObjectUserData)userData;
+
+                                Intent intent = new Intent(getApplicationContext(), Iva.class);
+                                startActivity(intent);
+                            }
+                        }
+                        return true;
+                    }
+                });
+            } else if (i < 18) {
+                circle.addTapListener(new MapObjectTapListener() {
+                    @Override
+                    public boolean onMapObjectTap(MapObject mapObject, Point point) {
+                        if (mapObject instanceof CircleMapObject) {
+                            CircleMapObject circle = (CircleMapObject)mapObject;
+
+                            Object userData = circle.getUserData();
+                            if (userData instanceof CircleMapObjectUserData) {
+                                CircleMapObjectUserData circleUserData = (CircleMapObjectUserData)userData;
+
+                                Intent intent = new Intent(getApplicationContext(), Olha.class);
+                                startActivity(intent);
+                            }
+                        }
+                        return true;
+                    }
+                });
+            }
+        }
 
         ArrayList<Point> polylinePoints = new ArrayList<>();
         polylinePoints.add(new Point(
@@ -139,9 +279,8 @@ public class MainActivity extends Activity {
         polyline.setZIndex(100.0f);
 
         PlacemarkMapObject mark = mapObjects.addPlacemark(DRAGGABLE_PLACEMARK_CENTER);
-        mark.setOpacity(0.5f);
+        mark.setOpacity(1f);
         mark.setIcon(ImageProvider.fromResource(this, R.drawable.pointer));
-        mark.setDraggable(true);
         mark.addTapListener(new MapObjectTapListener() {
             @Override
             public boolean onMapObjectTap(@NonNull MapObject mapObject, @NonNull Point point) {
@@ -161,22 +300,9 @@ public class MainActivity extends Activity {
             if (mapObject instanceof CircleMapObject) {
                 CircleMapObject circle = (CircleMapObject)mapObject;
 
-                float randomRadius = 100.0f + 50.0f * new Random().nextFloat();
-
-                Circle curGeometry = circle.getGeometry();
-                Circle newGeometry = new Circle(curGeometry.getCenter(), randomRadius);
-                circle.setGeometry(newGeometry);
-
                 Object userData = circle.getUserData();
                 if (userData instanceof CircleMapObjectUserData) {
                     CircleMapObjectUserData circleUserData = (CircleMapObjectUserData)userData;
-
-                    Toast toast = Toast.makeText(
-                            getApplicationContext(),
-                            "Circle with id " + circleUserData.id + " and description '"
-                                    + circleUserData.description + "' tapped",
-                            Toast.LENGTH_SHORT);
-                    toast.show();
 
                     Intent intent = new Intent(getApplicationContext(), Ber.class);
                     startActivity(intent);
@@ -194,16 +320,6 @@ public class MainActivity extends Activity {
             this.id = id;
             this.description = description;
         }
-    }
-
-    private void createTappableCircle(Point center) {
-        CircleMapObject circle = mapObjects.addCircle(
-                new Circle(CIRCLE_CENTER, 100), Color.GREEN, 2, Color.RED);
-        circle.setZIndex(100.0f);
-        circle.setUserData(new CircleMapObjectUserData(42, "Tappable circle"));
-
-        // Client code must retain strong reference to the listener.
-        circle.addTapListener(circleMapObjectTapListener);
     }
 
     private void createPlacemarkMapObjectWithViewProvider() {
