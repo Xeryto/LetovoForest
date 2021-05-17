@@ -4,6 +4,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -14,7 +15,8 @@ public class Ber extends AppCompatActivity {
             R.id.blocktwo,
             R.id.blockthree,
             R.id.blockfour,
-            R.id.blockone2
+            R.id.blockone2,
+            R.id.blocktwo2
     };
 
     private final static int[] buttons = {
@@ -24,7 +26,7 @@ public class Ber extends AppCompatActivity {
             R.id.b4
     };
 
-    private int currentButton = 1;
+    private Integer currentButton = 1;
 
     private final static int BUTTONS_AMOUNT = 4,
             BLOCKS_AMOUNT = 4;
@@ -43,8 +45,8 @@ public class Ber extends AppCompatActivity {
         sarrow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                changeVisibility(1,4);
-                changeButtonsVisibility(1, 4);
+                changeVisibility(1,BUTTONS_AMOUNT);
+                changeButtonsVisibility(1, BUTTONS_AMOUNT);
                 currentButton = 1;
             }
         });
@@ -52,10 +54,10 @@ public class Ber extends AppCompatActivity {
         sarrow2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (currentButton > 2)
-                    changeButtonsVisibility(currentButton-2, currentButton-3+ BUTTONS_AMOUNT);
-                else if (currentButton == 2)
-                    changeButtonsVisibility(1,4);
+                if (currentButton > 1)
+                    changeButtonsVisibility(currentButton-1, currentButton-2+ BUTTONS_AMOUNT);
+                else if (currentButton == 1)
+                    changeButtonsVisibility(1,BUTTONS_AMOUNT);
                 if (currentButton>=2) {
                     changeVisibility((currentButton-2)*BLOCKS_AMOUNT+1, (currentButton-1)*BLOCKS_AMOUNT);
                     currentButton-=1;
@@ -66,7 +68,10 @@ public class Ber extends AppCompatActivity {
         farrow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                changeVisibility(blocks.length - BLOCKS_AMOUNT + 1, blocks.length);
+                if (blocks.length%BLOCKS_AMOUNT == 0)
+                    changeVisibility(blocks.length - BLOCKS_AMOUNT + 1, blocks.length);
+                else
+                    changeVisibility(blocks.length - blocks.length%BLOCKS_AMOUNT + 1, blocks.length);
                 changeButtonsVisibility(buttons.length - BUTTONS_AMOUNT + 1, buttons.length);
                 currentButton = buttons.length;
             }
@@ -75,12 +80,17 @@ public class Ber extends AppCompatActivity {
         farrow2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (currentButton < buttons.length)
-                    changeButtonsVisibility(currentButton-2, currentButton-3+ BUTTONS_AMOUNT);
+                if (currentButton == 1)
+                    changeButtonsVisibility(1, BUTTONS_AMOUNT);
+                else if (currentButton < buttons.length)
+                    changeButtonsVisibility(currentButton-1, currentButton-2+ BUTTONS_AMOUNT);
                 else if (currentButton == buttons.length)
                     changeButtonsVisibility(buttons.length - BUTTONS_AMOUNT + 1,buttons.length);
-                if (currentButton>=2) {
-                    changeVisibility(currentButton*BLOCKS_AMOUNT + 1, (currentButton+1)*BLOCKS_AMOUNT);
+                if (currentButton<buttons.length) {
+                    if ((currentButton+1)*BLOCKS_AMOUNT > blocks.length)
+                        changeVisibility(currentButton*BLOCKS_AMOUNT + 1, blocks.length);
+                    else
+                        changeVisibility(currentButton*BLOCKS_AMOUNT + 1, (currentButton+1)*BLOCKS_AMOUNT);
                     currentButton+=1;
                 }
             }
@@ -91,8 +101,21 @@ public class Ber extends AppCompatActivity {
             btn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    changeVisibility(currIndex+1, currIndex+BLOCKS_AMOUNT);
-                    changeButtonsVisibility(currIndex+1, currIndex+ BUTTONS_AMOUNT);
+                    if (blocks.length < (currIndex+1)*BLOCKS_AMOUNT) {
+                        changeVisibility(currIndex*BLOCKS_AMOUNT+1, blocks.length);
+                    } else {
+                        changeVisibility(currIndex*BLOCKS_AMOUNT+1, (currIndex+1)*BLOCKS_AMOUNT);
+                    }
+                    if (currIndex == 0) {
+                        changeButtonsVisibility(currIndex+1, currIndex+BUTTONS_AMOUNT);
+                    } else if (currIndex < buttons.length-2) {
+                        changeButtonsVisibility(currIndex, currIndex+BUTTONS_AMOUNT-1);
+                    } else if (currIndex == buttons.length-2) {
+
+                    } else if (currIndex == buttons.length-1) {
+                        changeButtonsVisibility(currIndex+1, currIndex+ BUTTONS_AMOUNT);
+                    }
+                    currentButton = currIndex+1;
                 }
             });
         }
@@ -113,7 +136,7 @@ public class Ber extends AppCompatActivity {
         }
     }
 
-    private void changeButtonsVisibility(int s, int f) {
+    private void changeButtonsVisibility(Integer s, Integer f) {
         for (int i = 0; i < s-1; i++) {
             Button b = findViewById(buttons[i]);
             b.setVisibility(Button.GONE);
@@ -122,7 +145,7 @@ public class Ber extends AppCompatActivity {
             Button b = findViewById(buttons[i]);
             b.setVisibility(View.VISIBLE);
         }
-        for (int i = f; i < blocks.length; i++) {
+        for (int i = f; i < buttons.length; i++) {
             Button b = findViewById(buttons[i]);
             b.setVisibility(Button.GONE);
         }
