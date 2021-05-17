@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Mapkittest">
-        <activity android:name=".Sosna"></activity>
+        <activity android:name=".Contacts"></activity>
+        <activity android:name=".Sosna" />
         <activity android:name=".Olha" />
         <activity android:name=".Lipa" />
         <activity android:name=".Klen" />
