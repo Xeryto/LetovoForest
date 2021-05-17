@@ -115,6 +115,136 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/blockone3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imageViewOne3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_margin="15dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart"
+                    app:srcCompat="@drawable/barvinok" />
+
+                <TextView
+                    android:id="@+id/textViewOne3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:text="TextView" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/blockone4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imageViewOne4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_margin="15dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart"
+                    app:srcCompat="@drawable/barvinok" />
+
+                <TextView
+                    android:id="@+id/textViewOne4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:text="TextView" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/blockone5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imageViewOne5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_margin="15dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart"
+                    app:srcCompat="@drawable/barvinok" />
+
+                <TextView
+                    android:id="@+id/textViewOne5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:text="TextView" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/blockone6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imageViewOne6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_margin="15dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart"
+                    app:srcCompat="@drawable/barvinok" />
+
+                <TextView
+                    android:id="@+id/textViewOne6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:text="TextView" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/blockone7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imageViewOne7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_margin="15dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart"
+                    app:srcCompat="@drawable/barvinok" />
+
+                <TextView
+                    android:id="@+id/textViewOne7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:text="TextView" />
+
+            </LinearLayout>
+
+            <LinearLayout
                 android:id="@+id/blocktwo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -164,6 +294,131 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/blocktwo3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textViewTwo3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:text="Жимолость обыкновенная \nЭто листопадный кустарник высотой до 2,5 м. Молодые побеги зелёного или красноватого цвета, на старых кора серая или буровато-серая." />
+
+                <ImageView
+                    android:id="@+id/imageViewTwo3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_margin="15dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart"
+                    app:srcCompat="@drawable/zhimolost" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/blocktwo4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textViewTwo4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:text="Жимолость обыкновенная \nЭто листопадный кустарник высотой до 2,5 м. Молодые побеги зелёного или красноватого цвета, на старых кора серая или буровато-серая." />
+
+                <ImageView
+                    android:id="@+id/imageViewTwo4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_margin="15dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart"
+                    app:srcCompat="@drawable/zhimolost" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/blocktwo5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textViewTwo5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:text="Жимолость обыкновенная \nЭто листопадный кустарник высотой до 2,5 м. Молодые побеги зелёного или красноватого цвета, на старых кора серая или буровато-серая." />
+
+                <ImageView
+                    android:id="@+id/imageViewTwo5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_margin="15dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart"
+                    app:srcCompat="@drawable/zhimolost" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/blocktwo6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textViewTwo6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:text="Жимолость обыкновенная \nЭто листопадный кустарник высотой до 2,5 м. Молодые побеги зелёного или красноватого цвета, на старых кора серая или буровато-серая." />
+
+                <ImageView
+                    android:id="@+id/imageViewTwo6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_margin="15dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart"
+                    app:srcCompat="@drawable/zhimolost" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/blocktwo7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textViewTwo7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:text="Жимолость обыкновенная \nЭто листопадный кустарник высотой до 2,5 м. Молодые побеги зелёного или красноватого цвета, на старых кора серая или буровато-серая." />
+
+                <ImageView
+                    android:id="@+id/imageViewTwo7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_margin="15dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart"
+                    app:srcCompat="@drawable/zhimolost" />
+            </LinearLayout>
+
+            <LinearLayout
                 android:id="@+id/blockthree"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -188,6 +443,131 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/blockthree2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imageViewThree2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_margin="15dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart"
+                    app:srcCompat="@drawable/zhimolost2" />
+
+                <TextView
+                    android:id="@+id/textViewThree2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:text="Жимолость татарская \nЭто листопадный кустарник высотой 1—3 м. Побеги полые. Кора молодых побегов желтовато-бурая, покрытая мелкими тёмными чечевичками;" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/blockthree3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imageViewThree3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_margin="15dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart"
+                    app:srcCompat="@drawable/zhimolost2" />
+
+                <TextView
+                    android:id="@+id/textViewThree3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:text="Жимолость татарская \nЭто листопадный кустарник высотой 1—3 м. Побеги полые. Кора молодых побегов желтовато-бурая, покрытая мелкими тёмными чечевичками;" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/blockthree4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imageViewThree4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_margin="15dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart"
+                    app:srcCompat="@drawable/zhimolost2" />
+
+                <TextView
+                    android:id="@+id/textViewThree4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:text="Жимолость татарская \nЭто листопадный кустарник высотой 1—3 м. Побеги полые. Кора молодых побегов желтовато-бурая, покрытая мелкими тёмными чечевичками;" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/blockthree5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imageViewThree5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_margin="15dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart"
+                    app:srcCompat="@drawable/zhimolost2" />
+
+                <TextView
+                    android:id="@+id/textViewThree5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:text="Жимолость татарская \nЭто листопадный кустарник высотой 1—3 м. Побеги полые. Кора молодых побегов желтовато-бурая, покрытая мелкими тёмными чечевичками;" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/blockthree6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imageViewThree6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_margin="15dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart"
+                    app:srcCompat="@drawable/zhimolost2" />
+
+                <TextView
+                    android:id="@+id/textViewThree6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:text="Жимолость татарская \nЭто листопадный кустарник высотой 1—3 м. Побеги полые. Кора молодых побегов желтовато-бурая, покрытая мелкими тёмными чечевичками;" />
+            </LinearLayout>
+
+            <LinearLayout
                 android:id="@+id/blockfour"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -203,6 +583,131 @@
 
                 <ImageView
                     android:id="@+id/imageViewFour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_margin="15dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart"
+                    app:srcCompat="@drawable/krushina" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/blockfour2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textViewFour2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:text="Крушина ломкая \nКустарник или небольшое дерево, может достигать в высоту 7 м. Ствол и ветви тёмно-бурые. В отличие от крушины слабительной, ствол гладкий, без колючек." />
+
+                <ImageView
+                    android:id="@+id/imageViewFour2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_margin="15dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart"
+                    app:srcCompat="@drawable/krushina" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/blockfour3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textViewFour3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:text="Крушина ломкая \nКустарник или небольшое дерево, может достигать в высоту 7 м. Ствол и ветви тёмно-бурые. В отличие от крушины слабительной, ствол гладкий, без колючек." />
+
+                <ImageView
+                    android:id="@+id/imageViewFour3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_margin="15dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart"
+                    app:srcCompat="@drawable/krushina" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/blockfour4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textViewFour4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:text="Крушина ломкая \nКустарник или небольшое дерево, может достигать в высоту 7 м. Ствол и ветви тёмно-бурые. В отличие от крушины слабительной, ствол гладкий, без колючек." />
+
+                <ImageView
+                    android:id="@+id/imageViewFour4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_margin="15dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart"
+                    app:srcCompat="@drawable/krushina" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/blockfour5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textViewFour5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:text="Крушина ломкая \nКустарник или небольшое дерево, может достигать в высоту 7 м. Ствол и ветви тёмно-бурые. В отличие от крушины слабительной, ствол гладкий, без колючек." />
+
+                <ImageView
+                    android:id="@+id/imageViewFour5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_margin="15dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart"
+                    app:srcCompat="@drawable/krushina" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/blockfour6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textViewFour6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:text="Крушина ломкая \nКустарник или небольшое дерево, может достигать в высоту 7 м. Ствол и ветви тёмно-бурые. В отличие от крушины слабительной, ствол гладкий, без колючек." />
+
+                <ImageView
+                    android:id="@+id/imageViewFour6"
                     android:layout_width="wrap_content"
                     android:layout_height="100dp"
                     android:layout_margin="15dp"
@@ -265,6 +770,30 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="4" />
+
+        <Button
+            android:id="@+id/b5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/b6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/b7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:text="7" />
 
         <Button
             android:id="@+id/farrow2"

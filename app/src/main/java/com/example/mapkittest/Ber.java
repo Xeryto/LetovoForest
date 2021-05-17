@@ -16,17 +16,40 @@ public class Ber extends AppCompatActivity {
             R.id.blockthree,
             R.id.blockfour,
             R.id.blockone2,
-            R.id.blocktwo2
+            R.id.blocktwo2,
+            R.id.blockthree2,
+            R.id.blockfour2,
+            R.id.blockone3,
+            R.id.blocktwo3,
+            R.id.blockthree3,
+            R.id.blockfour3,
+            R.id.blockone4,
+            R.id.blocktwo4,
+            R.id.blockthree4,
+            R.id.blockfour4,
+            R.id.blockone5,
+            R.id.blocktwo5,
+            R.id.blockthree5,
+            R.id.blockfour5,
+            R.id.blockone6,
+            R.id.blocktwo6,
+            R.id.blockthree6,
+            R.id.blockfour6,
+            R.id.blockone7,
+            R.id.blocktwo7
     };
 
     private final static int[] buttons = {
             R.id.b1,
             R.id.b2,
             R.id.b3,
-            R.id.b4
+            R.id.b4,
+            R.id.b5,
+            R.id.b6,
+            R.id.b7
     };
 
-    private Integer currentButton = 1;
+    private int currentButton = 1;
 
     private final static int BUTTONS_AMOUNT = 4,
             BLOCKS_AMOUNT = 4;
@@ -55,7 +78,10 @@ public class Ber extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (currentButton > 1)
-                    changeButtonsVisibility(currentButton-1, currentButton-2+ BUTTONS_AMOUNT);
+                    if (currentButton-2+ BUTTONS_AMOUNT>buttons.length)
+                        changeButtonsVisibility(buttons.length - BUTTONS_AMOUNT, buttons.length);
+                    else
+                        changeButtonsVisibility(currentButton-1, currentButton-2+ BUTTONS_AMOUNT);
                 else if (currentButton == 1)
                     changeButtonsVisibility(1,BUTTONS_AMOUNT);
                 if (currentButton>=2) {
@@ -82,9 +108,9 @@ public class Ber extends AppCompatActivity {
             public void onClick(View v) {
                 if (currentButton == 1)
                     changeButtonsVisibility(1, BUTTONS_AMOUNT);
-                else if (currentButton < buttons.length)
+                else if (currentButton < buttons.length-1)
                     changeButtonsVisibility(currentButton-1, currentButton-2+ BUTTONS_AMOUNT);
-                else if (currentButton == buttons.length)
+                else if (currentButton == buttons.length || currentButton == buttons.length-1)
                     changeButtonsVisibility(buttons.length - BUTTONS_AMOUNT + 1,buttons.length);
                 if (currentButton<buttons.length) {
                     if ((currentButton+1)*BLOCKS_AMOUNT > blocks.length)
@@ -136,7 +162,7 @@ public class Ber extends AppCompatActivity {
         }
     }
 
-    private void changeButtonsVisibility(Integer s, Integer f) {
+    private void changeButtonsVisibility(int s, int f) {
         for (int i = 0; i < s-1; i++) {
             Button b = findViewById(buttons[i]);
             b.setVisibility(Button.GONE);
