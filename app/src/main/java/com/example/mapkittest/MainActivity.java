@@ -104,17 +104,17 @@ public class MainActivity extends Activity {
         points.add(new Point(55.551642, 37.422131));
 
         points.add(new Point(55.553868, 37.421423));
-        points.add(new Point(55.553186, 37.425972));
+        points.add(new Point(55.551254, 37.419105));
 
         points.add(new Point(55.553186, 37.425972));
         points.add(new Point(55.555631, 37.418419));
-        points.add(new Point(55.552648, 37.424371));
+        points.add(new Point(55.551940, 37.423768));
 
-        points.add(new Point(55.553917, 37.420618));
+        points.add(new Point(55.553746, 37.420618));
         points.add(new Point(55.551073, 37.418411));
 
-        points.add(new Point(55.554815, 37.419212));
-        points.add(new Point(55.554785, 37.421953));
+        points.add(new Point(55.555249, 37.418376));
+        points.add(new Point(55.554795, 37.421526));
         points.add(new Point(55.554230, 37.419960));
 
         points.add(new Point(55.555703, 37.419728));
@@ -122,7 +122,7 @@ public class MainActivity extends Activity {
         points.add(new Point(55.555671, 37.425466));
 
         points.add(new Point(55.555990, 37.417504));
-        points.add(new Point(55.555664, 37.421839));
+        points.add(new Point(55.555592, 37.422362));
         points.add(new Point(55.555697, 37.426181));
 
         for (int i = 0; i < points.size(); i++) {
