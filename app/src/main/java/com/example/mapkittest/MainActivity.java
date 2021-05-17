@@ -42,7 +42,6 @@ public class MainActivity extends Activity {
 
     private MapView mapView;
     private MapObjectCollection mapObjects;
-    private Handler animationHandler;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,26 +53,8 @@ public class MainActivity extends Activity {
         mapView.getMap().move(
                 new CameraPosition(CAMERA_TARGET, 15.0f, 0.0f, 0.0f));
         mapObjects = mapView.getMap().getMapObjects().addCollection();
-        animationHandler = new Handler();
         createMapObjects();
-        ImageButton logo;
-        logo = findViewById(R.id.logo);
-        logo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                startActivity(intent);
-            }
-        });
-        Button home, contacts;
-        home = findViewById(R.id.home);
-        home.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                startActivity(intent);
-            }
-        });
+        Button contacts;
         contacts = findViewById(R.id.contacts);
         contacts.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -82,6 +63,7 @@ public class MainActivity extends Activity {
                 startActivity(intent);
             }
         });
+        contacts.setBackgroundColor(Color.GREEN);
     }
 
     @Override

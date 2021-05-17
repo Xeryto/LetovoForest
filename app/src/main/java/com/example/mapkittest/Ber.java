@@ -1,12 +1,19 @@
 package com.example.mapkittest;
 
+import androidx.annotation.ColorInt;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
+import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class Ber extends AppCompatActivity {
 
@@ -54,7 +61,7 @@ public class Ber extends AppCompatActivity {
     private final static int BUTTONS_AMOUNT = 4,
             BLOCKS_AMOUNT = 4;
 
-    Button sarrow, farrow, sarrow2, farrow2;
+    Button sarrow, farrow, sarrow2, farrow2, contacts;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -64,6 +71,15 @@ public class Ber extends AppCompatActivity {
     }
 
     private void proceedButtons() {
+        contacts = findViewById(R.id.contacts);
+        contacts.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), Contacts.class);
+                startActivity(intent);
+            }
+        });
+        contacts.setBackgroundColor(Color.GREEN);
         sarrow = findViewById(R.id.sarrow);
         sarrow.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -71,8 +87,15 @@ public class Ber extends AppCompatActivity {
                 changeVisibility(1,BUTTONS_AMOUNT);
                 changeButtonsVisibility(1, BUTTONS_AMOUNT);
                 currentButton = 1;
+                for (int i = 0; i < buttons.length; i++) {
+                    Button btn = findViewById(buttons[i]);
+                    btn.setBackgroundColor(Color.GREEN);
+                }
+                Button curBtn = findViewById(buttons[currentButton-1]);
+                curBtn.setBackgroundColor(Color.BLACK);
             }
         });
+        sarrow.setBackgroundColor(Color.GREEN);
         sarrow2 = findViewById(R.id.sarrow2);
         sarrow2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -86,10 +109,15 @@ public class Ber extends AppCompatActivity {
                     changeButtonsVisibility(1,BUTTONS_AMOUNT);
                 if (currentButton>=2) {
                     changeVisibility((currentButton-2)*BLOCKS_AMOUNT+1, (currentButton-1)*BLOCKS_AMOUNT);
+                    Button lastBtn = findViewById(buttons[currentButton-1]);
+                    lastBtn.setBackgroundColor(Color.GREEN);
                     currentButton-=1;
+                    Button curBtn = findViewById(buttons[currentButton-1]);
+                    curBtn.setBackgroundColor(Color.BLACK);
                 }
             }
         });
+        sarrow2.setBackgroundColor(Color.GREEN);
         farrow = findViewById(R.id.farrow);
         farrow.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -100,8 +128,15 @@ public class Ber extends AppCompatActivity {
                     changeVisibility(blocks.length - blocks.length%BLOCKS_AMOUNT + 1, blocks.length);
                 changeButtonsVisibility(buttons.length - BUTTONS_AMOUNT + 1, buttons.length);
                 currentButton = buttons.length;
+                for (int i = 0; i < buttons.length; i++) {
+                    Button btn = findViewById(buttons[i]);
+                    btn.setBackgroundColor(Color.GREEN);
+                }
+                Button curBtn = findViewById(buttons[currentButton-1]);
+                curBtn.setBackgroundColor(Color.BLACK);
             }
         });
+        farrow.setBackgroundColor(Color.GREEN);
         farrow2 = findViewById(R.id.farrow2);
         farrow2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -117,10 +152,15 @@ public class Ber extends AppCompatActivity {
                         changeVisibility(currentButton*BLOCKS_AMOUNT + 1, blocks.length);
                     else
                         changeVisibility(currentButton*BLOCKS_AMOUNT + 1, (currentButton+1)*BLOCKS_AMOUNT);
+                    Button lastBtn = findViewById(buttons[currentButton-1]);
+                    lastBtn.setBackgroundColor(Color.GREEN);
                     currentButton+=1;
+                    Button curBtn = findViewById(buttons[currentButton-1]);
+                    curBtn.setBackgroundColor(Color.BLACK);
                 }
             }
         });
+        farrow2.setBackgroundColor(Color.GREEN);
         for (int i = 0; i < buttons.length; i++) {
             int currIndex = i;
             Button btn = findViewById(buttons[i]);
@@ -136,14 +176,22 @@ public class Ber extends AppCompatActivity {
                         changeButtonsVisibility(currIndex+1, currIndex+BUTTONS_AMOUNT);
                     } else if (currIndex < buttons.length-2) {
                         changeButtonsVisibility(currIndex, currIndex+BUTTONS_AMOUNT-1);
-                    } else if (currIndex == buttons.length-2) {
-
-                    } else if (currIndex == buttons.length-1) {
-                        changeButtonsVisibility(currIndex+1, currIndex+ BUTTONS_AMOUNT);
+                    } else if (currIndex == buttons.length-2 || currIndex == buttons.length-1) {
+                        changeButtonsVisibility(buttons.length - BUTTONS_AMOUNT+1, buttons.length);
                     }
                     currentButton = currIndex+1;
+                    for (int i = 0; i < buttons.length; i++) {
+                        Button btn = findViewById(buttons[i]);
+                        btn.setBackgroundColor(Color.GREEN);
+                    }
+                    Button curBtn = findViewById(buttons[currentButton-1]);
+                    curBtn.setBackgroundColor(Color.BLACK);
                 }
             });
+            if (i == 0)
+                btn.setBackgroundColor(Color.BLACK);
+            else
+                btn.setBackgroundColor(Color.GREEN);
         }
     }
 
