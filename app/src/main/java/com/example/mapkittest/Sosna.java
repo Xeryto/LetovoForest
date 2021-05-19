@@ -84,7 +84,10 @@ public class Sosna extends AppCompatActivity {
             public void onClick(View v) {
                 if (currentButton > 1)
                     if (currentButton-2+ BUTTONS_AMOUNT>buttons.length)
-                        changeButtonsVisibility(buttons.length - BUTTONS_AMOUNT, buttons.length);
+                        if (buttons.length<=BUTTONS_AMOUNT)
+                            changeButtonsVisibility(1, buttons.length);
+                        else
+                            changeButtonsVisibility(buttons.length - BUTTONS_AMOUNT, buttons.length);
                     else
                         changeButtonsVisibility(currentButton-1, currentButton-2+ BUTTONS_AMOUNT);
                 else if (currentButton == 1)
