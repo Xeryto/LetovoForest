@@ -95,7 +95,7 @@
                     android:layout_margin="15dp"
                     android:adjustViewBounds="true"
                     android:scaleType="fitStart"
-                    app:srcCompat="@drawable/barvinok" />
+                    app:srcCompat="@drawable/kalina" />
 
                 <TextView
                     android:id="@+id/textViewOne2"
@@ -103,7 +103,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="15dp"
                     android:layout_weight="1"
-                    android:text="TextView" />
+                    android:text="Калина обыкновенная \nЭто кустарник, реже дерево, с серовато-бурой корой, покрытой продольными трещинами, высотой 1,5–4 метра. Доживает до 50 лет и более. " />
 
             </LinearLayout>
 
@@ -121,7 +121,7 @@
                     android:layout_margin="15dp"
                     android:adjustViewBounds="true"
                     android:scaleType="fitStart"
-                    app:srcCompat="@drawable/barvinok" />
+                    app:srcCompat="@drawable/zhivuchka" />
 
                 <TextView
                     android:id="@+id/textViewOne3"
@@ -129,7 +129,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="15dp"
                     android:layout_weight="1"
-                    android:text="TextView" />
+                    android:text="Живучка ползучая \nЖивучка ползучая — многолетнее травянистое растение. Вид полиморфный, у растений могут в значительной степени отличаться опушение, стелющиеся побеги (у некоторых растений могут отсутствовать), время цветения, окраска листьев и венчика." />
 
             </LinearLayout>
 
@@ -147,7 +147,7 @@
                     android:layout_margin="15dp"
                     android:adjustViewBounds="true"
                     android:scaleType="fitStart"
-                    app:srcCompat="@drawable/barvinok" />
+                    app:srcCompat="@drawable/bereza" />
 
                 <TextView
                     android:id="@+id/textViewOne4"
@@ -155,7 +155,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="15dp"
                     android:layout_weight="1"
-                    android:text="TextView" />
+                    android:text="Берёза бородавчатая \nПри благоприятных условиях достигает 25—30 м в высоту, 7-12 м в диаметре кроны и до 80 см в диаметре ствола." />
 
             </LinearLayout>
 
@@ -173,7 +173,7 @@
                     android:layout_margin="15dp"
                     android:adjustViewBounds="true"
                     android:scaleType="fitStart"
-                    app:srcCompat="@drawable/barvinok" />
+                    app:srcCompat="@drawable/pihta" />
 
                 <TextView
                     android:id="@+id/textViewOne5"
@@ -181,7 +181,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="15dp"
                     android:layout_weight="1"
-                    android:text="TextView" />
+                    android:text="Пихта сибирская \nВечнозелёное дерево до 30 м высотой, с красивой узкоконической, почти колонновидной кроной. Ствол вверху цилиндрический, внизу ребристый." />
 
             </LinearLayout>
 
@@ -199,7 +199,7 @@
                     android:layout_margin="15dp"
                     android:adjustViewBounds="true"
                     android:scaleType="fitStart"
-                    app:srcCompat="@drawable/barvinok" />
+                    app:srcCompat="@drawable/smorodina" />
 
                 <TextView
                     android:id="@+id/textViewOne6"
@@ -207,7 +207,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="15dp"
                     android:layout_weight="1"
-                    android:text="TextView" />
+                    android:text="Смородина альпийская \nКустарник около 1,5 метров высотой, с плотно облиственёнными густыми компактно расположенными ветвями. Листья трёхлопастные тёмно-зелёные блестящие, шириной до 4 см." />
 
             </LinearLayout>
 
@@ -225,7 +225,7 @@
                     android:layout_margin="15dp"
                     android:adjustViewBounds="true"
                     android:scaleType="fitStart"
-                    app:srcCompat="@drawable/barvinok" />
+                    app:srcCompat="@drawable/lutik" />
 
                 <TextView
                     android:id="@+id/textViewOne7"
@@ -233,7 +233,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="15dp"
                     android:layout_weight="1"
-                    android:text="TextView" />
+                    android:text="Лютик ползучий \nЛютик ползучий — многолетнее травянистое растение высотой 15-40 см с коротким ветвистым корневищем. Стебель восходящий или стелющийся, укореняющийся в узлах, толстый, сочный, голый или коротко опушённый." />
 
             </LinearLayout>
 
@@ -274,7 +274,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="15dp"
                     android:layout_weight="1"
-                    android:text="Жимолость обыкновенная \nЭто листопадный кустарник высотой до 2,5 м. Молодые побеги зелёного или красноватого цвета, на старых кора серая или буровато-серая." />
+                    android:text="Будра плющевидная \nМноголетняя трава с ползучим голым или с короткими волосками стеблем длиной 20—50 см, с многочисленными укореняющимися побегами. Листья почковидные или округло-почковидные, крупногородчатые, на длинных черешках " />
 
                 <ImageView
                     android:id="@+id/imageViewTwo2"
@@ -283,7 +283,7 @@
                     android:layout_margin="15dp"
                     android:adjustViewBounds="true"
                     android:scaleType="fitStart"
-                    app:srcCompat="@drawable/zhimolost" />
+                    app:srcCompat="@drawable/budra" />
             </LinearLayout>
 
             <LinearLayout
@@ -299,7 +299,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="15dp"
                     android:layout_weight="1"
-                    android:text="Жимолость обыкновенная \nЭто листопадный кустарник высотой до 2,5 м. Молодые побеги зелёного или красноватого цвета, на старых кора серая или буровато-серая." />
+                    android:text="Хохлатка Геллера \nМноголетник. Клубень 8—15 мм диаметром, светло-коричневого цвета. Стебель 8—20 см высотой, простой или с одной веточкой в пазухе чешуевидного листа; последний расположен невысоко над клубнем, большой, продолговатый." />
 
                 <ImageView
                     android:id="@+id/imageViewTwo3"
@@ -308,7 +308,7 @@
                     android:layout_margin="15dp"
                     android:adjustViewBounds="true"
                     android:scaleType="fitStart"
-                    app:srcCompat="@drawable/zhimolost" />
+                    app:srcCompat="@drawable/hohlatka" />
             </LinearLayout>
 
             <LinearLayout
@@ -324,7 +324,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="15dp"
                     android:layout_weight="1"
-                    android:text="Жимолость обыкновенная \nЭто листопадный кустарник высотой до 2,5 м. Молодые побеги зелёного или красноватого цвета, на старых кора серая или буровато-серая." />
+                    android:text="Береза пушистая \nПри благоприятных условиях достигает 25—30 м в высоту и до 80 см в диаметре. Кора у молодых деревьев коричневато-бурая, а с 8—10 лет белеет. Молодые особи можно спутать с видами ольхи." />
 
                 <ImageView
                     android:id="@+id/imageViewTwo4"
@@ -333,7 +333,7 @@
                     android:layout_margin="15dp"
                     android:adjustViewBounds="true"
                     android:scaleType="fitStart"
-                    app:srcCompat="@drawable/zhimolost" />
+                    app:srcCompat="@drawable/bereza2" />
             </LinearLayout>
 
             <LinearLayout
@@ -349,7 +349,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="15dp"
                     android:layout_weight="1"
-                    android:text="Жимолость обыкновенная \nЭто листопадный кустарник высотой до 2,5 м. Молодые побеги зелёного или красноватого цвета, на старых кора серая или буровато-серая." />
+                    android:text="Пузыреплодник калинолистный \nКустарник высотой до 1,5—3 м. Ветви поникающие. Кора коричневая или буроватая с возрастом отслаивающаяся. От почек вниз по побегу идут хорошо заметные рёбра. " />
 
                 <ImageView
                     android:id="@+id/imageViewTwo5"
@@ -358,7 +358,7 @@
                     android:layout_margin="15dp"
                     android:adjustViewBounds="true"
                     android:scaleType="fitStart"
-                    app:srcCompat="@drawable/zhimolost" />
+                    app:srcCompat="@drawable/puzyr" />
             </LinearLayout>
 
             <LinearLayout
@@ -374,7 +374,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="15dp"
                     android:layout_weight="1"
-                    android:text="Жимолость обыкновенная \nЭто листопадный кустарник высотой до 2,5 м. Молодые побеги зелёного или красноватого цвета, на старых кора серая или буровато-серая." />
+                    android:text="Ожика лесная и снежная \nМноголетнее, вечнозелёное, ярко-зелёное, густо-дернистое растение с косым корневищем. Стебли прямые, книзу утолщённые, высотой 30—70 см, до верху олиственные." />
 
                 <ImageView
                     android:id="@+id/imageViewTwo6"
@@ -383,7 +383,7 @@
                     android:layout_margin="15dp"
                     android:adjustViewBounds="true"
                     android:scaleType="fitStart"
-                    app:srcCompat="@drawable/zhimolost" />
+                    app:srcCompat="@drawable/ozhika" />
             </LinearLayout>
 
             <LinearLayout
@@ -399,7 +399,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="15dp"
                     android:layout_weight="1"
-                    android:text="Жимолость обыкновенная \nЭто листопадный кустарник высотой до 2,5 м. Молодые побеги зелёного или красноватого цвета, на старых кора серая или буровато-серая." />
+                    android:text="Папоротник \nОн имеет характерного вида короткое и толстое, косо поднимающееся вверх корневище, покрытое широкими мягкими чешуями (коричневыми или чёрными) и остатками листовых черешков." />
 
                 <ImageView
                     android:id="@+id/imageViewTwo7"
@@ -408,7 +408,7 @@
                     android:layout_margin="15dp"
                     android:adjustViewBounds="true"
                     android:scaleType="fitStart"
-                    app:srcCompat="@drawable/zhimolost" />
+                    app:srcCompat="@drawable/paporotnik" />
             </LinearLayout>
 
             <LinearLayout
@@ -449,7 +449,7 @@
                     android:layout_margin="15dp"
                     android:adjustViewBounds="true"
                     android:scaleType="fitStart"
-                    app:srcCompat="@drawable/zhimolost2" />
+                    app:srcCompat="@drawable/vetrenica" />
 
                 <TextView
                     android:id="@+id/textViewThree2"
@@ -457,7 +457,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="15dp"
                     android:layout_weight="1"
-                    android:text="Жимолость татарская \nЭто листопадный кустарник высотой 1—3 м. Побеги полые. Кора молодых побегов желтовато-бурая, покрытая мелкими тёмными чечевичками;" />
+                    android:text="Ветреница лесная \nСтебель 5—15 см высотой, вверху почти беловойлочный. Цветоносный стебель с мутовкой из трёх черешковых листьев, опушённых с обеих сторон, рассечённых на три сегмента. Корневище вертикальное. " />
             </LinearLayout>
 
             <LinearLayout
@@ -474,7 +474,7 @@
                     android:layout_margin="15dp"
                     android:adjustViewBounds="true"
                     android:scaleType="fitStart"
-                    app:srcCompat="@drawable/zhimolost2" />
+                    app:srcCompat="@drawable/yasmennik" />
 
                 <TextView
                     android:id="@+id/textViewThree3"
@@ -482,7 +482,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="15dp"
                     android:layout_weight="1"
-                    android:text="Жимолость татарская \nЭто листопадный кустарник высотой 1—3 м. Побеги полые. Кора молодых побегов желтовато-бурая, покрытая мелкими тёмными чечевичками;" />
+                    android:text="Ясменник душистый \nПодмаренник душистый — многолетнее растение с тонким ползучим подземным корневищем. Стебель гладкий, четырёхгранный, высотой 10—60 см." />
             </LinearLayout>
 
             <LinearLayout
@@ -499,7 +499,7 @@
                     android:layout_margin="15dp"
                     android:adjustViewBounds="true"
                     android:scaleType="fitStart"
-                    app:srcCompat="@drawable/zhimolost2" />
+                    app:srcCompat="@drawable/ryabina" />
 
                 <TextView
                     android:id="@+id/textViewThree4"
@@ -507,7 +507,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="15dp"
                     android:layout_weight="1"
-                    android:text="Жимолость татарская \nЭто листопадный кустарник высотой 1—3 м. Побеги полые. Кора молодых побегов желтовато-бурая, покрытая мелкими тёмными чечевичками;" />
+                    android:text="Рябина обыкновенная \nДерево. Достигает 12 м высоты (обычно 5—10 м). Крона округлая, ажурная (достигает более 5,5 м в ширину). Побеги голые, красновато-бурые, покрытые блестящею сероватого цвета пленкой, легко стирающейся." />
             </LinearLayout>
 
             <LinearLayout
@@ -524,7 +524,7 @@
                     android:layout_margin="15dp"
                     android:adjustViewBounds="true"
                     android:scaleType="fitStart"
-                    app:srcCompat="@drawable/zhimolost2" />
+                    app:srcCompat="@drawable/snezhnoyagodnik" />
 
                 <TextView
                     android:id="@+id/textViewThree5"
@@ -532,7 +532,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="15dp"
                     android:layout_weight="1"
-                    android:text="Жимолость татарская \nЭто листопадный кустарник высотой 1—3 м. Побеги полые. Кора молодых побегов желтовато-бурая, покрытая мелкими тёмными чечевичками;" />
+                    android:text="Снежноягодник белый \nЛистопадный кустарник высотой до 1,5 метров с тонкими побегами. Листья супротивные, яйцевидные или овальные, цельнокрайние, длиной до 2—5 см. " />
             </LinearLayout>
 
             <LinearLayout
@@ -549,7 +549,7 @@
                     android:layout_margin="15dp"
                     android:adjustViewBounds="true"
                     android:scaleType="fitStart"
-                    app:srcCompat="@drawable/zhimolost2" />
+                    app:srcCompat="@drawable/sytnykovie" />
 
                 <TextView
                     android:id="@+id/textViewThree6"
@@ -557,7 +557,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="15dp"
                     android:layout_weight="1"
-                    android:text="Жимолость татарская \nЭто листопадный кустарник высотой 1—3 м. Побеги полые. Кора молодых побегов желтовато-бурая, покрытая мелкими тёмными чечевичками;" />
+                    android:text="Сем. Ситниковые \nСитниковые — однолетние или многолетние травы, редко полукустарники. Растут густыми дерновинами или, развивая ползучие корневища, — более редкими зарослями. " />
             </LinearLayout>
 
             <LinearLayout
@@ -597,7 +597,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="15dp"
                     android:layout_weight="1"
-                    android:text="Крушина ломкая \nКустарник или небольшое дерево, может достигать в высоту 7 м. Ствол и ветви тёмно-бурые. В отличие от крушины слабительной, ствол гладкий, без колючек." />
+                    android:text="Герань лесная \nКосое или почти вертикальное корневище вверху утолщено и покрыто остатками прикорневых листьев. Стебли достигают в высоту 30—80 см, прямостоячие, в верхней части разветвлённые, покрытые волосками. " />
 
                 <ImageView
                     android:id="@+id/imageViewFour2"
@@ -606,7 +606,7 @@
                     android:layout_margin="15dp"
                     android:adjustViewBounds="true"
                     android:scaleType="fitStart"
-                    app:srcCompat="@drawable/krushina" />
+                    app:srcCompat="@drawable/geran" />
             </LinearLayout>
 
             <LinearLayout
@@ -622,7 +622,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="15dp"
                     android:layout_weight="1"
-                    android:text="Крушина ломкая \nКустарник или небольшое дерево, может достигать в высоту 7 м. Ствол и ветви тёмно-бурые. В отличие от крушины слабительной, ствол гладкий, без колючек." />
+                    android:text="Сныть пестролистная фор \nВысота до 50 см; теневыносливое; многолетнее; морозоустойчивое; медонос. Листва — в виде трилистников, длина центральных листочков достигает 10 см." />
 
                 <ImageView
                     android:id="@+id/imageViewFour3"
@@ -631,7 +631,7 @@
                     android:layout_margin="15dp"
                     android:adjustViewBounds="true"
                     android:scaleType="fitStart"
-                    app:srcCompat="@drawable/krushina" />
+                    app:srcCompat="@drawable/snytpestraya" />
             </LinearLayout>
 
             <LinearLayout
@@ -647,7 +647,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="15dp"
                     android:layout_weight="1"
-                    android:text="Крушина ломкая \nКустарник или небольшое дерево, может достигать в высоту 7 м. Ствол и ветви тёмно-бурые. В отличие от крушины слабительной, ствол гладкий, без колючек." />
+                    android:text="Ель европейская \nВечнозелёное древесное растение высотой до 30 м (изредка до 50 м). Крона в виде конуса, образуется поникающими или распростёртыми ветвями, расположенными мутовчато. " />
 
                 <ImageView
                     android:id="@+id/imageViewFour4"
@@ -656,7 +656,7 @@
                     android:layout_margin="15dp"
                     android:adjustViewBounds="true"
                     android:scaleType="fitStart"
-                    app:srcCompat="@drawable/krushina" />
+                    app:srcCompat="@drawable/el" />
             </LinearLayout>
 
             <LinearLayout
@@ -672,7 +672,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="15dp"
                     android:layout_weight="1"
-                    android:text="Крушина ломкая \nКустарник или небольшое дерево, может достигать в высоту 7 м. Ствол и ветви тёмно-бурые. В отличие от крушины слабительной, ствол гладкий, без колючек." />
+                    android:text="Спирея берёзолистная и рябинолистная \nРастения высотой от 15 см до 2,5 м. Корневая система мочковатая, неглубокая. Ветви прямостоящие, раскинутые, лежачие, поднимающиеся или стелющиеся." />
 
                 <ImageView
                     android:id="@+id/imageViewFour5"
@@ -681,7 +681,7 @@
                     android:layout_margin="15dp"
                     android:adjustViewBounds="true"
                     android:scaleType="fitStart"
-                    app:srcCompat="@drawable/krushina" />
+                    app:srcCompat="@drawable/spyreya" />
             </LinearLayout>
 
             <LinearLayout
@@ -697,7 +697,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="15dp"
                     android:layout_weight="1"
-                    android:text="Крушина ломкая \nКустарник или небольшое дерево, может достигать в высоту 7 м. Ствол и ветви тёмно-бурые. В отличие от крушины слабительной, ствол гладкий, без колючек." />
+                    android:text="Ландыш майский \nТравянистое многолетнее растение 15—30 см высотой. Подземное корневище горизонтальное ползучее, не толще гусиного пера, несёт близ верхушки несколько бледных небольших низовых листьев, полускрытых в земле." />
 
                 <ImageView
                     android:id="@+id/imageViewFour6"
@@ -706,7 +706,7 @@
                     android:layout_margin="15dp"
                     android:adjustViewBounds="true"
                     android:scaleType="fitStart"
-                    app:srcCompat="@drawable/krushina" />
+                    app:srcCompat="@drawable/landysh" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

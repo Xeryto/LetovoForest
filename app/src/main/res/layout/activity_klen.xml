@@ -1,9 +1,576 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Klen">
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/navbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/logo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:contentDescription="@string/todo"
+            android:scaleType="centerInside"
+            android:src="@drawable/logo" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3" />
+
+        <Button
+            android:id="@+id/contacts"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/contacts" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="120dp"
+        app:layout_constraintBottom_toTopOf="@id/paginator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/navbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/blockone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_margin="15dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart"
+                    app:srcCompat="@drawable/barvinok" />
+
+                <TextView
+                    android:id="@+id/textViewOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:text="Барвинок малый \nБарвинок малый — вечнозелёное многолетнее травянистое растение (или кустарничек) с тонким горизонтальным корневищем и прямостоячими цветоносными стеблями высотой 15—20 см (в культуре до 40—60 см)." />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/blockone2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imageViewOne2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_margin="15dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart"
+                    app:srcCompat="@drawable/pachysandra" />
+
+                <TextView
+                    android:id="@+id/textViewOne2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:text="Пахизандра верхушечная \nЭто медленнорастущий, раскидистый вечнозеленый многолетник, вырастающий до 10 см (4 дюйма) в высоту и 60 см (24 дюйма) в ширину, с чередующимися простыми блестящими листьями и ползучими стеблями. " />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/blockone3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imageViewOne3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_margin="15dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart"
+                    app:srcCompat="@drawable/klen" />
+
+                <TextView
+                    android:id="@+id/textViewOne3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:text="Клён остролистный \nЛистопадное дерево высотой 12—28 м с широкой, густой шаровидной кроной. Кора молодых деревьев гладкая, серо-коричневая, с возрастом темнеет до почти чёрной и покрывается длинными." />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/blockone4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imageViewOne4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_margin="15dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart"
+                    app:srcCompat="@drawable/deren3" />
+
+                <TextView
+                    android:id="@+id/textViewOne4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:text="Дёрен отпрысковый \nЛистопадный кустарник высотой и диаметром 2 метра, возможно 3 метра с широкой, округлой кроной. Весной и осенью побеги желто-оливковые или зеленовато-оливковые." />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/blockone5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imageViewOne5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_margin="15dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart"
+                    app:srcCompat="@drawable/klen4" />
+
+                <TextView
+                    android:id="@+id/textViewOne5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:text="Клен Гиннала \nКлён приречный — листопадный распростёртый кустарник или маленькое дерево, достигающее 3—10 м в высоту, с коротким стволом до 20—40 см в диаметре и тонкими прямыми ветвями." />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/blocktwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:text="Бруннера крупнолистная \nМноголетнее короткокорневищное травянистое растение. Корневище горизонтальное, толщиной 0,5—1 см, чёрно-бурое, с нитевидными придаточными корнями." />
+
+                <ImageView
+                    android:id="@+id/imageViewTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_margin="15dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart"
+                    app:srcCompat="@drawable/brunnera" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/blocktwo2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textViewTwo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:text="Сныть пестролистная \nВысота до 50 см; теневыносливое; многолетнее; морозоустойчивое; медонос. Листва — в виде трилистников, длина центральных листочков достигает 10 см." />
+
+                <ImageView
+                    android:id="@+id/imageViewTwo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_margin="15dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart"
+                    app:srcCompat="@drawable/snytpestraya" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/blocktwo3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textViewTwo3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:text="Клён серебристый \nЛистопадное быстрорастущее дерево средних размеров, высотой 27—36 м Ствол короткий, возле основания часто разделяется на несколько вертикальных разветвлений. " />
+
+                <ImageView
+                    android:id="@+id/imageViewTwo3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_margin="15dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart"
+                    app:srcCompat="@drawable/klen2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/blocktwo4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textViewTwo4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:text="Калина обыкновенная \nЭто кустарник, реже дерево, с серовато-бурой корой, покрытой продольными трещинами, высотой 1,5–4 метра. Доживает до 50 лет и более." />
+
+                <ImageView
+                    android:id="@+id/imageViewTwo4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_margin="15dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart"
+                    app:srcCompat="@drawable/kalina" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/blockthree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewThree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_margin="15dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart"
+                    app:srcCompat="@drawable/volzhankna" />
+
+                <TextView
+                    android:id="@+id/textViewThree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:text="Волжанка двудомная \nРастение относится к тенелюбивым многолетникам, хорошо переносит и яркое освещение, и полутень, способно расти в самых затененных местах сада до 15 лет без пересадки и не терять декоративности. " />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/blockthree2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imageViewThree2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_margin="15dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart"
+                    app:srcCompat="@drawable/yasnotka" />
+
+                <TextView
+                    android:id="@+id/textViewThree2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:text="Яснотка крапчатая \nМноголетнее травянистое растение высотой до 70 см. Могут быть как прямостоячими, так и раскидистыми низкорослыми растениями. Стебли четырёхгранные, более или менее опушённые." />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/blockthree3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imageViewThree3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_margin="15dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart"
+                    app:srcCompat="@drawable/klen3" />
+
+                <TextView
+                    android:id="@+id/textViewThree3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:text="Клён красный \nЛистопадное дерево средних размеров, 9—28 м высотой и диаметром ствола до 1,6 м. Хотя клён красный довольно легко идентифицируется, он обладает довольно широкими морфологическими характеристиками." />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/blockthree4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imageViewThree4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_margin="15dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart"
+                    app:srcCompat="@drawable/kalina2" />
+
+                <TextView
+                    android:id="@+id/textViewThree4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:text="Калина гордовина \nГордовина — кустарник или дерево до 6 м высотой. Молодые веточки и почки сероватые, волосисто-опушённые. Кора трёхлетнего возраста растрескивающаяся, серая. Крона густая." />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/blockfour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewFour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:text="Горянка красная \nПредставители вида — многолетние травы с ползучим корневищем. Декоративные растения. Листья преимущественно прикорневые или на стебле в числе 1—2." />
+
+                <ImageView
+                    android:id="@+id/imageViewFour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_margin="15dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart"
+                    app:srcCompat="@drawable/goryanka" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/blockfour2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textViewFour2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:text="Зеленчук желтый \nТравянистый многолетник со стелющимися, укореняющимися вегетативными побегами. Стебли с мягкими волосками. Цветущие побеги прямостоячие, высотой 30—60 см." />
+
+                <ImageView
+                    android:id="@+id/imageViewFour2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_margin="15dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart"
+                    app:srcCompat="@drawable/zelenchuk" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/blockfour3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textViewFour3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:text="Дерен белый \nСильноветвистый листопадный энтомофильный кустарник до 3 м высотой. Ветви голые тонкие гибкие прямые, к старости дуговидно изогнутые." />
+
+                <ImageView
+                    android:id="@+id/imageViewFour3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_margin="15dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart"
+                    app:srcCompat="@drawable/deren2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/blockfour4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textViewFour4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_weight="1"
+                    android:text="Пузыреплодник головчатый \nНизкий стелющийся кустарник с густой полушаровидной кроной до 0,6 м высотой и около 1 м диаметром с ярко-зелёными листьями на ярких красных раскидистых побегах." />
+
+                <ImageView
+                    android:id="@+id/imageViewFour4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_margin="15dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart"
+                    app:srcCompat="@drawable/puzyr2" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/paginator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/footer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/sarrow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:text="@string/sarrow" />
+
+        <Button
+            android:id="@+id/sarrow2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/sarrow2" />
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/b2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/b3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/b4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/b5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/farrow2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/farrow2" />
+
+        <Button
+            android:id="@+id/farrow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:text="@string/farrow" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/footer"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
